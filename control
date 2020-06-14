@@ -1,0 +1,9 @@
+Package: com.thomz.customlowbattery
+Name: CustomLowBattery
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: Add a new alert for low battery
+Maintainer: thomz
+Author: thomz
+Section: Tweaks
