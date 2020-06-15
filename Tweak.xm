@@ -4,13 +4,14 @@
 %hook UIWindow
 
 -(id)initWithFrame:(CGRect)arg1 {
+
+    return %orig;
     
     [[NSNotificationCenter defaultCenter] addObserver:self
 				selector:@selector(showAlert:)
 				name:@"CustomLowBatteryinfoChanged"
 				object:nil];
 
-    return %orig;
 }
 
 -(void)showAlert:(NSNotification *)notification {
